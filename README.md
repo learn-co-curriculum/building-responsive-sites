@@ -55,7 +55,7 @@ of:
 In subsequent materials we'll cover each of these techniques.
 Together they create "responsive sites."
 
-## What is Desktop-Down Design?
+## Designing Desktop-Down
 
 There are multiple approaches to responsive design. One approach is
 _Desktop-down_, where a site is first designed for desktop devices, then
@@ -70,7 +70,7 @@ width and height they should be for a larger screen. When a smaller screen size
 is detected, the default styling will be overridden and replaced with the rules
 for tablet or mobile styling.
 
-## What is Mobile-Up Design
+## Designing Mobile-Up
 
 Going in the opposite direction is _mobile-up_ or _mobile-first_, an approach
 gaining popularity in our modern, mobile world. The idea behind this approach is
@@ -88,7 +88,7 @@ mobile devices.
 Mobile-up design means that, by default, elements on the page are positioned and
 sized for small screens, then overridden if a larger screen is detected.
 
-## Explain Graceful Degradation
+## Graceful Degradation
 
 The internet is used by a variety of users, all with different web browser
 versions.  Although the [majority of
@@ -104,7 +104,7 @@ alternatives. Fully embracing graceful degradation may mean designing your
 website to work even without JavaScript or CSS, using the older, most compliant
 HTML.
 
-## Explain Progressive Enhancement
+## Progressive Enhancement
 
 Just as with mobile-up and desktop-down, progressive enhancement is
 the same as graceful degradation, but in the opposite direction. Progressive
