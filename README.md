@@ -78,7 +78,7 @@ for small screen sizes first. One benefit to this approach is that it ensures
 users have a great experience on mobile, as there is no change it will end up
 being a second thought during design.
 
-Many, if not most, internet users now interact with the through their cell
+Many, if not most, internet users now interact with the internet through their cell
 phones more than their laptops, so it makes sense for businesses to cater to
 these users first.  Chrome luckily provides a useful tool, the [device
 toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports)
