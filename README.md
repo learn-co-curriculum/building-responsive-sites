@@ -40,7 +40,7 @@ versions of your site. This is an expensive and error-prone solution.
 
 ## Creating Responsive Sites with CSS
 
-The other common solution to is to use Cascading Style Sheets.  Instead of a
+The other common solution is to use Cascading Style Sheets. Instead of a
 server detecting the type of device, every user receives the same content,
 and the provided CSS tells the user's browser how to style the rendered page. 
 The ideal approach for a well designed, responsive website relies on a combination
@@ -57,37 +57,36 @@ Together they create "responsive sites."
 
 ## What is Desktop-Down Design?
 
-There are multiple approaches to responsive design.  One approach is
+There are multiple approaches to responsive design. One approach is
 _Desktop-down_, where a site is first designed for desktop devices, then
 modified layouts are developed for tablet and mobile devices. Since we're
 _doing_ the work of designing a website on a desktop or laptop already, this
-approach can feel the most natural.  Desktops and laptops offer more
+approach can feel the most natural. Desktops and laptops offer more
 capabilities with their more powerful hardware, and the larger screen size means
 a larger space to work with, a larger canvas for us to paint on.
 
 Desktop-down design often means that, by default, elements on the page are the
-width and height they should be for a larger screen.  When a smaller screen size
+width and height they should be for a larger screen. When a smaller screen size
 is detected, the default styling will be overridden and replaced with the rules
 for tablet or mobile styling.
 
 ## What is Mobile-Up Design
 
-Going in the opposite direction is _mobile-up_ or _mobile-first_, an approach gaining popularity in
-our modern, mobile world. The idea behind this approach is to design websites
-for small screen sizes first. One benefit to this approach is that it ensures
-users have a great experience on mobile, as there is no change it will end up
-being a second thought during design.
+Going in the opposite direction is _mobile-up_ or _mobile-first_, an approach
+gaining popularity in our modern, mobile world. The idea behind this approach is
+to design websites for small screen sizes first. One benefit to this approach is
+that it ensures users have a great experience on mobile, as there is no change
+it will end up being a second thought during design.
 
 Many, if not most, internet users now interact with the internet through their cell
 phones more than their laptops, so it makes sense for businesses to cater to
-these users first.  Chrome luckily provides a useful tool, the [device
+these users first. Chrome luckily provides a useful tool, the [device
 toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports)
 within the developer tools, that lets you mimic the proportions of popular
 mobile devices.
 
-Mobile-up design means that, by default, elements on the page are positioned are
-positioned and sized for small screens, then overridden if a larger screen is
-detected.
+Mobile-up design means that, by default, elements on the page are positioned and
+sized for small screens, then overridden if a larger screen is detected.
 
 ## Explain Graceful Degradation
 
@@ -112,7 +111,6 @@ the same as graceful degradation, but in the opposite direction.  Progressive
 enhancement means first designing your website to function at its most basic,
 then upscaling the functionality if the user's browser can handle it.
 
-
 ## Conclusion
 
 There are a number of ways that front end developers can accommodate users
@@ -120,5 +118,3 @@ on different platforms. Which method or methods chosen can depend on the
 core functionality of the website. Understanding these various options will
 help inform how your page is built for maximum accessibility--there is no 
 single _right_ way!
-
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/building-responsive-sites' title='Building Responsive Sites'>Building Responsive Sites</a> on Learn.co and start learning to code for free.</p>
