@@ -97,17 +97,17 @@ browsers like Chrome, there are still some users that haven't updated since
 [Internet Explorer
 6](https://developer.microsoft.com/en-us/microsoft-edge/ie6countdown/#).
 Graceful degradation is the practice of designing a web page for modern
-browsers, but providing 'fall back' versions, alternative designs that have less
+browsers, but providing fallback versions: alternative designs that have fewer
 features, but still provide a good experience. Unless your website needs the
 latest and coolest functionality, it is often a good idea to provide some
-alternatives.  Fully embracing graceful degradation may mean designing your
+alternatives. Fully embracing graceful degradation may mean designing your
 website to work even without JavaScript or CSS, using the older, most compliant
 HTML.
 
 ## Explain Progressive Enhancement
 
 Just as with mobile-up and desktop-down, progressive enhancement is
-the same as graceful degradation, but in the opposite direction.  Progressive
+the same as graceful degradation, but in the opposite direction. Progressive
 enhancement means first designing your website to function at its most basic,
 then upscaling the functionality if the user's browser can handle it.
 
