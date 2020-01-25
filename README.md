@@ -80,10 +80,9 @@ it will end up being a second thought during design.
 
 Many, if not most, internet users now interact with the internet through their cell
 phones more than their laptops, so it makes sense for businesses to cater to
-these users first. Chrome luckily provides a useful tool, the [device
-toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports)
-within the developer tools, that lets you mimic the proportions of popular
-mobile devices.
+these users first. Luckily modern web browers provides a useful tool that lets you mimic 
+the proportions of popular mobile devices via the [device 
+toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports) in chrome and [Responsive device mode](https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode) in firefox. 
 
 Mobile-up design means that, by default, elements on the page are positioned and
 sized for small screens, then overridden if a larger screen is detected.
