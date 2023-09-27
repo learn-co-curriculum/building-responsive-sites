@@ -1,33 +1,33 @@
 # Building Responsive Sites
 
-## Problem Statement
+## Learning Goals
+
+- Explain server-side detection for redirection.
+- Explain creating responsive sites with CSS.
+- Explain desktop-down design.
+- Explain mobile-up design.
+- Explain graceful degradation.
+- Explain progressive enhancement.
+
+## Introduction
 
 On the modern web, we frequently access the same content on a variety of
 devices. Each device will display content differently due to its size
 and proportions. This can have unpredictable results: text might appear
 too small, or parts of the page might shift around in an unusual way,
-and can lead to poor user experience. As front-end developers, we want our 
-web sites to look good and function well whether a user is on 
+and can lead to poor user experience. As front-end developers, we want our
+web sites to look good and function well whether a user is on
 their laptop, phone or tablet.
 
 In this lesson we will outline the high-level approaches for these concerns.
 In subsequent lessons we will learn to code responsiveness into our sites.
 
-## Objectives
-
-1. Explain server-side detection for redirection
-2. Explain creating responsive sites with CSS
-3. Explain desktop-down design
-4. Explain mobile-up design
-5. Explain graceful degradation
-6. Explain progressive enhancement
-
 ## Using Server-Side Detection for Redirection
 
 Every time your web browser opens a web page, it sends information to the server
-called a "request". Part of that request includes a series of "headers". HTTP 
-headers carry information about the client browser, the requested page, the server, 
-and more. It is possible for web servers to check the requesting device's headers 
+called a "request". Part of that request includes a series of "headers". HTTP
+headers carry information about the client browser, the requested page, the server,
+and more. It is possible for web servers to check the requesting device's headers
 information, and send back files specific to the type of device. Going to
 [twitter.com](twitter.com) on your phone will automatically redirect you to
 [mobile.twitter.com](mobile.twitter.com) because their servers detected that a
@@ -42,7 +42,7 @@ versions of your site. This is an expensive and error-prone solution.
 
 The other common solution is to use Cascading Style Sheets. Instead of a
 server detecting the type of device, every user receives the same content,
-and the provided CSS tells the user's browser how to style the rendered page. 
+and the provided CSS tells the user's browser how to style the rendered page.
 The ideal approach for a well designed, responsive website relies on a combination
 of:
 
@@ -113,8 +113,8 @@ then upscaling the functionality if the user's browser can handle it.
 
 ## Conclusion
 
-There are a number of ways that front end developers can accommodate users
-on different platforms. Which method or methods chosen can depend on the 
+There are a number of ways that front-end developers can accommodate users
+on different platforms. Which method or methods are chosen can depend on the
 core functionality of the website. Understanding these various options will
-help inform how your page is built for maximum accessibility--there is no 
+help inform how your page is built for maximum accessibility — there is no
 single _right_ way!
