@@ -12,39 +12,37 @@
 ## Introduction
 
 On the modern web, we frequently access the same content on a variety of
-devices. Each device will display content differently due to its size
-and proportions. This can have unpredictable results: text might appear
-too small, or parts of the page might shift around in an unusual way,
-and can lead to poor user experience. As front-end developers, we want our
-web sites to look good and function well whether a user is on
-their laptop, phone or tablet.
+devices. Each device will display content differently due to its size and
+proportions. This can have unpredictable results: text might appear too small,
+or parts of the page might shift around in an unusual way, and can lead to poor
+user experience. As front-end developers, we want our web sites to look good and
+function well whether a user is on their laptop, phone or tablet.
 
-In this lesson we will outline the high-level approaches for these concerns.
-In subsequent lessons we will learn to code responsiveness into our sites.
+In this lesson we will outline the high-level approaches for these concerns. In
+subsequent lessons we will learn to code responsiveness into our sites.
 
 ## Using Server-Side Detection for Redirection
 
 Every time your web browser opens a web page, it sends information to the server
 called a "request". Part of that request includes a series of "headers". HTTP
-headers carry information about the client browser, the requested page, the server,
-and more. It is possible for web servers to check the requesting device's headers
-information, and send back files specific to the type of device. Going to
-[twitter.com](twitter.com) on your phone will automatically redirect you to
-[mobile.twitter.com](mobile.twitter.com) because their servers detected that a
-phone was sending the request.
+headers carry information about the client browser, the requested page, the
+server, and more. It is possible for web servers to check the requesting
+device's headers information, and send back files specific to the type of
+device. Going to [twitter.com](twitter.com) on your phone will automatically
+redirect you to [mobile.twitter.com](mobile.twitter.com) because their servers
+detected that a phone was sending the request.
 
 Unfortunately, while this is a common solution, it requires building _two_
-separate websites. Every time you want to change something about the content
-of your site, you have to do it twice, once for both the desktop and mobile
+separate websites. Every time you want to change something about the content of
+your site, you have to do it twice, once for both the desktop and mobile
 versions of your site. This is an expensive and error-prone solution.
 
 ## Creating Responsive Sites with CSS
 
-The other common solution is to use Cascading Style Sheets. Instead of a
-server detecting the type of device, every user receives the same content,
-and the provided CSS tells the user's browser how to style the rendered page.
-The ideal approach for a well designed, responsive website relies on a combination
-of:
+The other common solution is to use Cascading Style Sheets. Instead of a server
+detecting the type of device, every user receives the same content, and the
+provided CSS tells the user's browser how to style the rendered page. The ideal
+approach for a well designed, responsive website relies on a combination of:
 
 1. CSS media queries
 2. Responsive **layout** styling
@@ -52,8 +50,8 @@ of:
 4. Responsive **media element** styling
 5. Responding to the viewport size
 
-In subsequent materials we'll cover each of these techniques.
-Together they create "responsive sites."
+In subsequent materials we'll cover each of these techniques. Together they
+create "responsive sites."
 
 ## Designing Desktop-Down
 
@@ -61,9 +59,9 @@ There are multiple approaches to responsive design. One approach is
 _Desktop-down_, where a site is first designed for desktop devices, then
 modified layouts are developed for tablet and mobile devices. Since we're
 _doing_ the work of designing a website on a desktop or laptop already, this
-approach can feel the most natural. Desktops and laptops offer more
-capabilities with their more powerful hardware, and the larger screen size means
-a larger space to work with, a larger canvas for us to paint on.
+approach can feel the most natural. Desktops and laptops offer more capabilities
+with their more powerful hardware, and the larger screen size means a larger
+space to work with, a larger canvas for us to paint on.
 
 Desktop-down design often means that, by default, elements on the page are the
 width and height they should be for a larger screen. When a smaller screen size
@@ -78,10 +76,10 @@ to design websites for small screen sizes first. One benefit to this approach is
 that it ensures users have a great experience on mobile, as there is no chance
 it will end up being a second thought during design.
 
-Many, if not most, internet users now interact with the internet through their cell
-phones more than their laptops, so it makes sense for businesses to cater to
-these users first. Chrome luckily provides a useful tool, the [device
-toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports)
+Many, if not most, internet users now interact with the internet through their
+cell phones more than their laptops, so it makes sense for businesses to cater
+to these users first. Chrome luckily provides a useful tool, the
+[device toolbar](https://developers.google.com/web/tools/chrome-devtools/device-mode/emulate-mobile-viewports)
 within the developer tools, that lets you mimic the proportions of popular
 mobile devices.
 
@@ -91,30 +89,28 @@ sized for small screens, then overridden if a larger screen is detected.
 ## Graceful Degradation
 
 The internet is used by a variety of users, all with different web browser
-versions.  Although the [majority of
-users](https://www.w3schools.com/browsers/default.asp) are now on modern web
-browsers like Chrome, there are still some users that haven't updated since
-[Internet Explorer
-6](https://developer.microsoft.com/en-us/microsoft-edge/ie6countdown/#).
-Graceful degradation is the practice of designing a web page for modern
-browsers, but providing fallback versions: alternative designs that have fewer
-features, but still provide a good experience. Unless your website needs the
-latest and coolest functionality, it is often a good idea to provide some
-alternatives. Fully embracing graceful degradation may mean designing your
+versions. Although the
+[majority of users](https://www.w3schools.com/browsers/default.asp) are now on
+modern web browsers like Chrome, there are still some users that haven't updated
+from old browsers. Graceful degradation is the practice of designing a web page
+for modern browsers, but providing fallback versions: alternative designs that
+have fewer features, but still provide a good experience. Unless your website
+needs the latest and coolest functionality, it is often a good idea to provide
+some alternatives. Fully embracing graceful degradation may mean designing your
 website to work even without JavaScript or CSS, using the older, most compliant
 HTML.
 
 ## Progressive Enhancement
 
-Just as with mobile-up and desktop-down, progressive enhancement is
-the same as graceful degradation, but in the opposite direction. Progressive
-enhancement means first designing your website to function at its most basic,
-then upscaling the functionality if the user's browser can handle it.
+Just as with mobile-up and desktop-down, progressive enhancement is the same as
+graceful degradation, but in the opposite direction. Progressive enhancement
+means first designing your website to function at its most basic, then upscaling
+the functionality if the user's browser can handle it.
 
 ## Conclusion
 
-There are a number of ways that front-end developers can accommodate users
-on different platforms. Which method or methods are chosen can depend on the
-core functionality of the website. Understanding these various options will
-help inform how your page is built for maximum accessibility — there is no
-single _right_ way!
+There are a number of ways that front-end developers can accommodate users on
+different platforms. Which method or methods are chosen can depend on the core
+functionality of the website. Understanding these various options will help
+inform how your page is built for maximum accessibility — there is no single
+_right_ way!
